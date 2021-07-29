@@ -8,7 +8,7 @@
 
 [Volo.Abp.VirtualFileSystem](https://www.nuget.org/packages/Volo.Abp.VirtualFileSystem) 是虚拟文件系统的NuGet主页.
 
-使用ABP CLIi添加包到你的项目:
+使用ABP CLI添加包到你的项目:
 
 * 安装[ABP CLI](https://docs.abp.io/en/abp/latest/CLI),如果你还没有安装.
 * 在你想要添加 `Volo.Abp.VirtualFileSystem` 包的项目的 `.csproj` 文件目录打开命令行(终端).
@@ -39,7 +39,7 @@
 如果文件名包含一些特殊字符,在项目/程序集中嵌入文件可能会导致问题. 为了克服这个限制;
 
 1. 将[Microsoft.Extensions.FileProviders.Embedded](https://www.nuget.org/packages/Microsoft.Extensions.FileProviders.Embedded) NuGet包添加到包含嵌入式资源的项目中.
-2. 添加 `<GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>` 到 `.csproj` 文件的 `<PropertyConfig>...</PropertyConfig>` 部分中.
+2. 添加 `<GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>` 到 `.csproj` 文件的 `<PropertyGroup>...</PropertyGroup>` 部分中.
 
 > 尽管这两个步骤是可选的,并且ABP无需这些配置即可工作,但强烈建议你这样做.
 
